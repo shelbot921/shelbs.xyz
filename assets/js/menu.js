@@ -1,19 +1,20 @@
 var Menu = {
-  preload : function() {
-    game.load.image('menu', '.assets/images/menu.png') ;
-},
+
+    preload : function() {
+        game.load.image('menu', '.assets/images/menu.png') ;
+    },
 
 create: function () {
 
-//create: function () {
-//  this.add.sprite(0, 0, 'menu');
-this.add.button(0, 0, 'menu', this.startgame, this);
+    //create: function () {
+    //  this.add.sprite(0, 0, 'menu');
+    this.add.button(0, 0, 'menu', this.startGame, this);
 
-},
+    },
 
-startgame: function () {
-this.state.start('Game')
+    startGame: function () {
+        this.state.start('Game')
 
-}
+    }
 
 };
