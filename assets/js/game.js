@@ -44,6 +44,8 @@ var Game = {
          speedTextValue = game.add.text(558, 18, speed.toString(), textStyle_Value);
 
      },
+	 
+    update: function() {	 
 
         if (cursors.right.isDown && direction!='left')
         {
